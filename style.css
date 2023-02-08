@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Raleway', sans-serif ;
+}
+
+
+            /*HEADER*/
+
+header{
+    margin-left: 2em;
+    margin-right: 5em;
+}
+.headerimg{
+    height: 2.65em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li:hover{
+    color: #0065fc;
+}
+
+        /*SEARCHBAR*/
+.searchbar{
+    margin-top: 50px;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-map{
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-map input{
+    font-weight: 600;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #f2f2f2;
+    padding: 1.2em;
+}
+
+.search-map i{
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px 0px 0px 10px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.search-map button{
+    height: 40px;
+    width: 95px;
+    background-color: #0065fc;
+    border: 1px solid gray;
+    border-radius: 0 10px 10px 0;
+    color:white;
+    cursor: pointer;
+}
+
+    /*SEARCHFILTRE*/
+
+.searchfiltre{
+    margin-left: 2em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.searchcategoryfiltre{
+    display: flex;
+    gap: 30px;
+}
+
+.icon{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #dfdddf;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.icon:hover{
+    transform: scale(1.05);
+    color: blue;
+}
+
+.iconfiltre{
+    color: #0065fc;
+    padding: 10px;
+}
+
+.filtresolo{
+    font-weight: 600;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+/* INFORMATION LOGEMENTS*/
+.Informationlogements{
+    margin-left: 2em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Informationlogements i{
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+}
+
+
+
+
+/*HOSTING CARD PRINCIPAL*/
+
+.hostingcard{
+    background-color:#F2F2F2;
+    width: 65%;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.cardbigtitle{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.cardblock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 35px;
+}
+.card{
+    background-color: white;
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
+}
+
+.card img{
+    padding: 4px;
+    border-radius: 20px 20px 0px 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.carddescription{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 5px;
+}
+
+
+.price{
+    font-weight: bold;
+}
+
+.colorblue{
+    color: #0065fc;
+}
+
+.colorgrey{
+    color: #dfdddf;
+}
+
+/* HOSTINGCARD ET HOSTINGCARD ASIDE COTE A COTE*/
+main{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+/*SECTION HOSTING CARD ASIDE*/
+
+.hostingcardaside{
+    height: 600px;
+    width: 35%;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-right: 30px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+.hostingcardasidetitle{
+    padding-top: 30px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.cardblockaside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.cardaside{
+    display: flex;
+    height: 136px;
+    width: 290px;
+    border: 1px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 0.9em;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.cardaside:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
+}
+
+.imgcardaside{
+    width: 110px;
+    height: 135px;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.etoileaside{
+    display: flex;
+    align-items: flex-end;
+}
+
+.carddescriptionaside{
+    margin-left: 0.6em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardasidetitle{
+    font-weight: bold;
+}
+
+.priceasidedescription{
+    margin-bottom: 1.4em;
+}
+
+/*Section activités à Marseille*/
+
+.activitycardblock{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 2em;
+}
+.cardactivitymarseille{
+    height: 390px;
+    width: 260px;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictureactivity{
+    height: 350px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.descriptionactivity{
+    margin-left: 15px;
+    margin-top: 15px;
+}
