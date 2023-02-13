@@ -14,27 +14,54 @@ header{
     margin-right: 5em;
 }
 .headerimg{
-    height: 2.65em;
+    height: 1.65em;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 1.8em;
 }
 nav ul{
     display: flex;
-    gap: 10px;
+    gap: 1.5em;
 }
 
+
+
 nav ul li:hover{
+    border-top: 4px solid #0065fc;
     color: #0065fc;
+}
+
+@media screen and (max-width: 992px){
+    nav {
+      display: block;
+      border-bottom: 3px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    .headerimg{
+        margin: auto;
+    }
+
+    nav ul li:hover{
+        border-bottom: 4px solid #0065fc;
+        color: #0065fc;
+    }
 }
 
         /*SEARCHBAR*/
 .searchbar{
-    margin-top: 50px;
+    margin-top: 3em;
     margin-left: 2em;
     display: flex;
     flex-direction: column;
@@ -81,12 +108,12 @@ nav ul li:hover{
     margin-top: 2em;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 3.5em;
 }
 
 .searchcategoryfiltre{
     display: flex;
-    gap: 30px;
+    gap: 3em;
 }
 
 .icon{
@@ -115,21 +142,37 @@ nav ul li:hover{
     padding-right: 10px;
 }
 
+@media screen and (max-width: 992px){
+    .searchfiltre{
+        display: block;
+        align-items: center;
+    }
+    .searchcategoryfiltre{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        gap: 1em;
+        }
+
+}
+
+
 /* INFORMATION LOGEMENTS*/
 .Informationlogements{
     margin-left: 2em;
     margin-top: 2em;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1em;
 }
 
 .Informationlogements i{
     border: 2px solid #F2F2F2;
     border-radius: 50%;
-    height: 25px;
-    width: 20px;
-    padding: 15px;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +191,7 @@ nav ul li:hover{
     border-radius: 15px;
     margin-left: 2em;
     margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .cardbigtitle{
@@ -207,7 +250,7 @@ nav ul li:hover{
 main{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2.5em;
 
 }
 /*SECTION HOSTING CARD ASIDE*/
@@ -216,7 +259,7 @@ main{
     height: 600px;
     width: 35%;
     margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     margin-right: 30px;
     border-radius: 15px;
     background-color: #F2F2F2;
@@ -284,16 +327,25 @@ main{
 
 /*Section activités à Marseille*/
 
-.activitycardblock{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.activitymarseille{
+    margin-left: 2em;
+    margin-top: 2em;
     margin-bottom: 2em;
 }
+
+.activitycardblock{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 2em;
+}
+
+
+
 .cardactivitymarseille{
     height: 390px;
     width: 260px;
-    border: 1px solid;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -301,12 +353,38 @@ main{
 
 .pictureactivity{
     height: 350px;
-    width: 260px;
+    width: 259px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .descriptionactivity{
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 12px;
+    margin-top: 10px;
 }
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #F2F2F2;
+    width: 90%;
+    margin-left: 2em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.footerblock{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerelementtitle{
+    margin-bottom: 11px;
+}
+
+.footerelement{
+    margin: 1.5em;
+}
+
+
