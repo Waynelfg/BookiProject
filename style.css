@@ -35,29 +35,6 @@ nav ul li:hover{
     color: #0065fc;
 }
 
-@media screen and (max-width: 992px){
-    nav {
-      display: block;
-      border-bottom: 3px solid #f2f2f2;
-      padding-bottom: 20px;
-    }
-
-    nav ul{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2em;
-        gap: 2em;
-    }
-
-    .headerimg{
-        margin: auto;
-    }
-
-    nav ul li:hover{
-        border-bottom: 4px solid #0065fc;
-        color: #0065fc;
-    }
-}
 
         /*SEARCHBAR*/
 .searchbar{
@@ -140,21 +117,6 @@ nav ul li:hover{
     font-weight: 600;
     margin: 10px;
     padding-right: 10px;
-}
-
-@media screen and (max-width: 992px){
-    .searchfiltre{
-        display: block;
-        align-items: center;
-    }
-    .searchcategoryfiltre{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 1em;
-        gap: 1em;
-        }
-
 }
 
 
@@ -340,8 +302,6 @@ main{
     margin-top: 2em;
 }
 
-
-
 .cardactivitymarseille{
     height: 390px;
     width: 260px;
@@ -349,6 +309,13 @@ main{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.cardactivitymarseille:hover{
+    transform: scale(1.05);
+    box-shadow: 20px 20px 25px rgb(0 0 0 / 6%);
 }
 
 .pictureactivity{
@@ -388,3 +355,245 @@ footer{
 }
 
 
+@media screen and (max-width: 992px){
+    nav {
+      display: block;
+      border-bottom: 3px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    .headerimg{
+        margin: auto;
+    }
+
+    nav ul li:hover{
+        border-top: 4px solid #0065fc;
+        color: #0065fc;
+    }
+
+    .searchfiltre{
+        display: block;
+        align-items: center;
+    }
+    .searchcategoryfiltre{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        gap: 1em;
+        }
+
+    /*Media HostingCardGeneral display*/
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.5em;
+    
+    }
+    
+    /*Media Hosting card*/
+    .hostingcard{
+        background-color:#F2F2F2;
+        width: 30em;
+        height: 1400px;
+        border-radius: 15px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .cardbigtitle{
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+    .cardblock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 35px;
+    }
+    .card{
+        background-color: white;
+        height: 180px;
+        width: 400px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .8s;
+    }
+    
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
+    }
+    
+    .card img{
+        padding: 4px;
+        border-radius: 20px 20px 0px 0px;
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+    .carddescription{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 5px;
+    }
+    
+    
+    .price{
+        font-weight: bold;
+    }
+    
+    .colorblue{
+        color: #0065fc;
+    }
+    
+    .colorgrey{
+        color: #dfdddf;
+    }
+
+    /*media Hosting Card Aside*/
+    .hostingcardaside{
+        margin-left: 2em;
+        height: 600px;
+        width: 30em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border-radius: 15px;
+        background-color: #F2F2F2;
+    }
+    
+    .hostingcardasidetitle{
+        padding-top: 30px;
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+    
+    /*.cardblockaside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    */
+    
+    .cardaside{
+        display: flex;
+        height: 136px;
+        width: 25em;
+        border: 1px;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 0.9em;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+    
+    .cardaside:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
+    }
+    
+    .imgcardaside{
+        width: 8em;
+        height: 135px;
+        object-fit: cover;
+        padding: 4px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    
+    .etoileaside{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .carddescriptionaside{
+        margin-left: 0.6em;
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .cardasidetitle{
+        font-weight: bold;
+    }
+    
+    .priceasidedescription{
+        margin-bottom: 1.4em;
+    }
+
+
+    /* Media Activités à Marseille*/
+    .activitymarseille{
+        margin-left: 5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .activitycardblock{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-top: 2em;
+    }
+    
+    
+    
+    .cardactivitymarseille{
+        height: 390px;
+        width: 260px;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 6%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pictureactivity{
+        height: 350px;
+        width: 259px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .descriptionactivity{
+        margin-left: 12px;
+        margin-top: 10px;
+    }
+    
+    
+    /*FOOTER*/
+    
+    footer{
+        background-color: #F2F2F2;
+        width: 90%;
+        margin-left: 2em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+    
+    .footerblock{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .footerelementtitle{
+        margin-bottom: 11px;
+    }
+    
+    .footerelement{
+        margin: 1.5em;
+    }
+}
